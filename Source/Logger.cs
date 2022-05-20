@@ -17,8 +17,11 @@ namespace MailExporter
             if (config.loggingMode == LoggingMode.None || config == null)
                 return;
 
+            // get the current formated date with milliseconds.
+            string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+
             // log to console.
-            System.Console.WriteLine(message);
+            System.Console.WriteLine(date + ": " + message);
 
             // if logging to file is enabled, log to file.
             if (config.loggingMode == LoggingMode.File)

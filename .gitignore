@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# No Config file for security reasons
+Config.json
+
+# Exclude the Archive folder for security reasons
+Archive/
