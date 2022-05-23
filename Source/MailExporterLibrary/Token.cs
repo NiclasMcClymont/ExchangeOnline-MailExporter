@@ -32,7 +32,7 @@ namespace MailExporter.Lib
             appLoginInfo = loginInfo;
             authentication = CreateToken(loginInfo);
 
-            int expiresIn = (int) (authentication.ExpiresOn.DateTime - DateTime.UtcNow).TotalMilliseconds;
+            int expiresIn = (int) (authentication.ExpiresOn.DateTime - DateTime.UtcNow).TotalMilliseconds - 10000;
 
             timer.Change(expiresIn, Timeout.Infinite);
         }
@@ -43,7 +43,9 @@ namespace MailExporter.Lib
         {
             Log.Debug("Token expired", this);
             authentication = CreateToken(appLoginInfo);
-            int expiresIn = (int) (authentication.ExpiresOn.DateTime - DateTime.Now).TotalMilliseconds;
+
+            // Calculate milliseconds until the token expires
+            int expiresIn = (int) (authentication.ExpiresOn.DateTime - DateTime.UtcNow).TotalMilliseconds - 10000;
             timer.Change(expiresIn, Timeout.Infinite);
         }
 

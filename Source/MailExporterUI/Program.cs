@@ -17,19 +17,21 @@ namespace MailExporter.UI {
 
             // Create a login info object
             var loginInfo = new AppLoginInfo(
-                "<your-app-id>", 
-                "<tenant id>", 
-                "<your secret key>");
+                "Application ID", 
+                "Tenant ID", 
+                "Secret Key");
 
             // Create a new token
             var token = new Token(loginInfo);
 
             System.Console.WriteLine("Token: " + token.Authentication.AccessToken);
 
-            await Task.Delay(1000);
+
+            await Task.Delay(5000);
+
+            
+            
         }
-
-
     }
 
 }
