@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailExporterLibrary", "MailExporterLibrary\MailExporterLibrary.csproj", "{70EF455C-B555-408C-B668-9566EF310AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailExporterUI", "MailExporterUI\MailExporterUI.csproj", "{A860FCF3-EBF4-4662-8CC5-BCB0A77D1CC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EF455C-B555-408C-B668-9566EF310AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EF455C-B555-408C-B668-9566EF310AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EF455C-B555-408C-B668-9566EF310AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EF455C-B555-408C-B668-9566EF310AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A860FCF3-EBF4-4662-8CC5-BCB0A77D1CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A860FCF3-EBF4-4662-8CC5-BCB0A77D1CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A860FCF3-EBF4-4662-8CC5-BCB0A77D1CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A860FCF3-EBF4-4662-8CC5-BCB0A77D1CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
